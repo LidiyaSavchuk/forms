@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Сервис создания анкет</title>
+		
+		
+	<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyBI1nt68PC4YCglKYfRbF2unQ_iKNMaZuw",
+		authDomain: "forms-cb6d8.firebaseapp.com",
+		databaseURL: "https://forms-cb6d8.firebaseio.com",
+		projectId: "forms-cb6d8",
+		storageBucket: "forms-cb6d8.appspot.com",
+		messagingSenderId: "304843019627"
+	  };
+	  firebase.initializeApp(config);
+</script>	<link rel='stylesheet' href='index.css'/>
+	</head>
+	<body>
+		<div id='app'>
+		<img src='ajax-loader.gif' id='loader'>
+		<div id='message'></div>
+			<div id='form'>
+				<div class='label'>Введите вопрос:</div>
+				<textarea id='question-title'></textarea>
+				<div>
+					<button id='question-save'>Сохранить</button>
+				</div>
+			</div>
+		</div>
+		<script type='text/javascript' src='index.js'></script>
+		
+	</body>
+</html>
