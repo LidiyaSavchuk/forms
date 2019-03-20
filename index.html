@@ -18,16 +18,25 @@
 </script>	<link rel='stylesheet' href='index.css'/>
 	</head>
 	<body>
-		<div id='app'>
-		<img src='ajax-loader.gif' id='loader'>
+	<img src='ajax-loader.gif' id='loader'>
 		<div id='message'></div>
-			<div id='form'>
+		<div id='form-list'>
+		<a id='open-profile-edit'> Настроить свой профиль</a>
+		<hd> Список анкет</hd>
+		<div id='forms-list-content'></div>
+		</div>
+		<div id='profile-edit' class='hidden'>
+		
+			<div id='form'>	
+			
 				<div class='label'>Введите вопрос:</div>
 				<textarea id='question-title'></textarea>
 				<div>
 					<button id='question-save'>Сохранить</button>
 				</div>
+				<div id='questions-container'></div>
 			</div>
+		
 			<div></div>
 			<div id='form'>
 				<div class='label'>Расскажите о себе</div>

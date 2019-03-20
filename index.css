@@ -1,3 +1,9 @@
 #loader{
 	display:none;
 } 
+.hidden{
+	display:none;
+}
+#open-profile-edit{
+	float:right;
+}
