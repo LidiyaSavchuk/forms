@@ -5,7 +5,7 @@
 		document.getElementById('profile-edit').classList.remove('hidden')
 		document.getElementById('form-list').classList.add('hidden')
 	}
-	
+	 
 	firebase.database().ref('users').on('value', onFormsListLoaded)
 	function onFormsListLoaded(snapshot){
 		//отчистка, чтобы не было дублирования
